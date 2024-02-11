@@ -1,0 +1,19 @@
+from nltk.chat.util import Chat,reflections
+pairs=[
+       [r'hi',['hii']],
+       [r'hii|hey|hello',['hi there']],
+       [r'how are you',['i am fine hoping u good']],
+       [r'what is your name',['My name is chatbot']],
+       [r'who invented you',['i am invented by Keerthana']],
+       [r'what is your favourite programming language',['my favourite programming language is Python']],
+       ['take care',['machine cannot have feelings']],
+       ['Define python',['it is a programming language']],
+       ['exit',['Quit bye!!']],
+]
+chat=Chat(pairs,reflections)
+chat.converse()       
+def quit1():
+  print("Hii i am chatbot ask me something")
+if __name__=="__main__":
+  quit1()       
+      
